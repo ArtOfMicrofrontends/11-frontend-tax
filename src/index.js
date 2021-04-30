@@ -1,6 +1,6 @@
-let Info = undefined;
-
 export function setup(api) {
+  let Info = undefined;
+
   api.registerExtension("balance-info", {
     bootstrap: () =>
       import("./Info.svelte").then((content) => {
